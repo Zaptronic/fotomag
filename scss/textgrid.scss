@@ -1,0 +1,27 @@
+.text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    // grid-row-gap: $margin;
+    grid-template-areas:
+        "A-column-1 A-column-1"
+        "B-column-2 B-column-2";
+
+    @media (min-width: 800px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: $margin * 0.5;
+        grid-template-areas:
+            "A-column-1 B-column-2"
+            "A-column-1 B-column-2";
+    }
+
+    &--item {
+        grid-area: A-column-1;
+        background-color: beige;
+    }
+    &--item2 {
+        grid-area: B-column-2;
+        background-color: lavenderblush;
+    }
+}

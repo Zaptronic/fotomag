@@ -7,14 +7,14 @@
         <?php wp_head(); ?>
     </head>
 <body <?php body_class(); ?>>
-    <header>
-        <a href="<?php echo home_url(); ?>"><h2><?php bloginfo('name'); ?></h2></a>
-        <p><?php bloginfo('description'); ?></p>
+    <header class="header">
+        <a href="<?php echo home_url(); ?>"><h2 class="header__title"><?php bloginfo('name'); ?></h2></a>
+        <!-- <p><?php bloginfo('description'); ?></p> -->
 
-        <div class="search">
+        <!-- <div class="search">
             <?php get_search_form(); ?>
-        </div>
-        
+        </div> -->
+
         <nav class="main_navigation">
             <?php
                 $args = array(

@@ -1,0 +1,18 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    &__title {
+        margin-left: $margin;
+    }
+}
+.main_navigation {
+    position: absolute;
+    right: $margin;
+    top: 12px;
+
+    li {
+        display: inline;
+    }
+}

@@ -15,6 +15,23 @@ function themesetup() {
         'primary' => __('primary menu'),
         'footer' => __('footer menu'),
     ));
+
+    //set filter for multiple featured images
+    add_filter( 'kdmfi_featured_images', function( $featured_images ) {
+        $args = array(
+            'id' => 'featured-image-2',
+            'desc' => '',
+            'label_name' => 'Featured Image 2',
+            'label_set' => 'Set featured image 2',
+            'label_remove' => 'Remove featured image 2',
+            'label_use' => 'Set featured image 2',
+            'post_type' => array( 'post' ),
+        );
+
+        $featured_images[] = $args;
+
+        return $featured_images;
+    });
 }
 
 //customize excerpt word count length
@@ -22,13 +39,15 @@ function custom_excerpt_length() {
     return 25;
 }
 
-function widgetssetup() {
 
+//widgets setup
+function widgetssetup() {
     register_sidebar( array(
         'name' => 'Sidebar',
         'id' => 'sidebar1'
     ));
 }
+
 
 
 add_action('wp_enqueue_scripts', 'importresources');

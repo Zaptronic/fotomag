@@ -1,0 +1,36 @@
+.one-page-grid {
+    margin: $margin;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: calc(100vh - 96px);
+}
+
+.two-page-grid {
+    margin: $margin;
+    // background-color: pink;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: calc(50vh - 48px) calc(50vh - 48px);
+    grid-template-areas:
+        "A-column"
+        "B-column";
+
+    @media (min-width: 800px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: calc(100vh - 96px);
+        grid-template-areas:
+            "A-column B-column";
+    }
+}
+.A-page-section {
+    //reverse order of pages
+    // grid-area: B-column;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+.B-page-section {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+}

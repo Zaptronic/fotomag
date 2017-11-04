@@ -27,8 +27,9 @@
     }
     echo trim($output, $seperator);
     ?></p>
-    <?php the_post_thumbnail('small-thumbnail') ?>
-
+    <a href="<?php the_permalink()?>">
+        <?php the_post_thumbnail('small-thumbnail') ?>
+    </a>
     <p><?php echo get_the_excerpt(); ?>
         <a href="<?php the_permalink()?>">read more</a>
     </p>
