@@ -9,7 +9,7 @@ $picturecount = 0;
     <?php $gridtype = get_post_meta( $post->ID,'A-page-section', true );
     if ($gridtype == 'picture') { ?>
         <div class="A-page-section picture-grid">
-    		<div class="picture-grid--item">
+    		<div class="picture-grid--item picture-grid--1--7--6">
                     <?php the_post_thumbnail('fullimagesize'); $picturecount++; ?>
             </div>
     	</div>
@@ -29,7 +29,7 @@ $picturecount = 0;
     <?php $gridtype = get_post_meta( $post->ID,'B-page-section', true );
     if ($gridtype == 'picture') { ?>
         <div class="B-page-section picture-grid">
-            <div class="picture-grid--item">
+            <div class="picture-grid--item picture-grid--3--2--10">
                     <?php
                     if ($picturecount !== 0) {
                         kdmfi_the_featured_image( 'featured-image-2', 'full' );

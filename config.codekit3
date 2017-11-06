@@ -16,6 +16,125 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/build\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/.gitignore",
+		"oF": 0
+		},
+	"\/build\/archive.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/archive.php",
+		"oF": 0
+		},
+	"\/build\/content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/content.php",
+		"oF": 0
+		},
+	"\/build\/footer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/footer.php",
+		"oF": 0
+		},
+	"\/build\/functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/functions.php",
+		"oF": 0
+		},
+	"\/build\/header.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/header.php",
+		"oF": 0
+		},
+	"\/build\/home-template.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/home-template.php",
+		"oF": 0
+		},
+	"\/build\/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/index.php",
+		"oF": 0
+		},
+	"\/build\/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/page.php",
+		"oF": 0
+		},
+	"\/build\/screenshot.png": {
+		"ft": 32768,
+		"iS": 238,
+		"oA": 0,
+		"oAP": "\/build\/screenshot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/search.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/search.php",
+		"oF": 0
+		},
+	"\/build\/searchform.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/searchform.php",
+		"oF": 0
+		},
+	"\/build\/single-twopagelayout.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/single-twopagelayout.php",
+		"oF": 0
+		},
+	"\/build\/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/single.php",
+		"oF": 0
+		},
+	"\/build\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/build\/twopagecontent.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/twopagecontent.php",
+		"oF": 0
+		},
 	"\/content.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -72,7 +191,7 @@
 		"oAP": "\/screenshot.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -174,7 +293,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 3
@@ -195,7 +314,8 @@
 	"creationDate": 531489339,
 	"displayValue": "fotomag",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-yesBaby"
+	"iconImageName": "meme-yesBaby",
+	"lastBuiltDate": 531563581
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

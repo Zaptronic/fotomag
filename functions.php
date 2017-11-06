@@ -8,7 +8,7 @@ function themesetup() {
     // add featured image support
     add_theme_support('post-thumbnails');
     add_image_size('small-thumbnail', 180, 120, true);
-    add_image_size('fullimagesize', 920, 460, array('left', 'top'));
+    add_image_size('fullimagesize', 2000, 1500, array('left', 'top'));
 
     //navigation setup
     register_nav_menus(array(

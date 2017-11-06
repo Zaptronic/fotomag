@@ -1,13 +1,117 @@
+@mixin gridpositioning($x, $y, $width) {
+    $offset: 1;
+    $gridunits: 12;
+    grid-column-start: $x;
+    grid-row-start: $y;
+    grid-column-end: $x + $width;
+    grid-row-end: $y + $width;
+
+    @media (min-width: 800px) {
+        grid-column-start: $x;
+        grid-row-start: $y;
+        grid-column-end: $x + $width;
+    }
+    @if $y >= $gridunits/2 {
+        align-self: end;
+    }
+    @if $x > ($gridunits - $width) {
+        justify-self: end;
+    }
+
+}
+
 .picture-grid {
+    // overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 
     &--item {
-        grid-column-start: 2;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 5;
-        background-color: lightsteelblue;
+        // align-self: end; // seperate class to control in wp custom field
+        // grid-row-end: 13;
+        // background-color: lightsteelblue;
+        // overflow: hidden;
+
+        @media (min-width: 800px) {
+            // grid-row-end: 12;
+        }
+
+        @media (min-width: 1600px) {
+            // grid-row-start: 2;
+            // grid-row-end: 12;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            // max-width: 800px;
+        }
     }
+
+    &--1--1--1 { @include gridpositioning(1, 1, 1);}
+    &--1--1--2 { @include gridpositioning(1, 1, 2);}
+    &--1--1--3 { @include gridpositioning(1, 1, 3);}
+    &--1--1--4 { @include gridpositioning(1, 1, 4);}
+    &--1--1--5 { @include gridpositioning(1, 1, 5);}
+    &--1--1--6 { @include gridpositioning(1, 1, 6);}
+    &--1--1--7 { @include gridpositioning(1, 1, 7);}
+    &--1--1--8 { @include gridpositioning(1, 1, 8);}
+    &--1--1--9 { @include gridpositioning(1, 1, 9);}
+    &--1--1--10 { @include gridpositioning(1, 1, 10);}
+    &--1--1--11 { @include gridpositioning(1, 1, 11);}
+
+    &--1--2--1 { @include gridpositioning(1, 2, 1);}
+    &--1--2--2 { @include gridpositioning(1, 2, 2);}
+    &--1--2--3 { @include gridpositioning(1, 2, 3);}
+    &--1--2--4 { @include gridpositioning(1, 2, 4);}
+    &--1--2--5 { @include gridpositioning(1, 2, 5);}
+    &--1--2--6 { @include gridpositioning(1, 2, 6);}
+    &--1--2--7 { @include gridpositioning(1, 2, 7);}
+    &--1--2--8 { @include gridpositioning(1, 2, 8);}
+    &--1--2--9 { @include gridpositioning(1, 2, 9);}
+    &--1--2--10 { @include gridpositioning(1, 2, 10);}
+
+    &--1--3--1 { @include gridpositioning(1, 3, 1);}
+    &--1--3--2 { @include gridpositioning(1, 3, 2);}
+    &--1--3--3 { @include gridpositioning(1, 3, 3);}
+    &--1--3--4 { @include gridpositioning(1, 3, 4);}
+    &--1--3--5 { @include gridpositioning(1, 3, 5);}
+    &--1--3--6 { @include gridpositioning(1, 3, 6);}
+    &--1--3--7 { @include gridpositioning(1, 3, 7);}
+    &--1--3--8 { @include gridpositioning(1, 3, 8);}
+    &--1--3--9 { @include gridpositioning(1, 3, 9);}
+
+    &--1--4--1 { @include gridpositioning(1, 4, 1);}
+    &--1--4--2 { @include gridpositioning(1, 4, 2);}
+    &--1--4--3 { @include gridpositioning(1, 4, 3);}
+    &--1--4--4 { @include gridpositioning(1, 4, 4);}
+    &--1--4--5 { @include gridpositioning(1, 4, 5);}
+    &--1--4--6 { @include gridpositioning(1, 4, 6);}
+    &--1--4--7 { @include gridpositioning(1, 4, 7);}
+    &--1--4--8 { @include gridpositioning(1, 4, 8);}
+
+    &--1--5--1 { @include gridpositioning(1, 5, 1);}
+    &--1--5--2 { @include gridpositioning(1, 5, 2);}
+    &--1--5--3 { @include gridpositioning(1, 5, 3);}
+    &--1--5--4 { @include gridpositioning(1, 5, 4);}
+    &--1--5--5 { @include gridpositioning(1, 5, 5);}
+    &--1--5--6 { @include gridpositioning(1, 5, 6);}
+    &--1--5--7 { @include gridpositioning(1, 5, 7);}
+
+    &--1--6--1 { @include gridpositioning(1, 6, 1);}
+    &--1--6--2 { @include gridpositioning(1, 6, 2);}
+    &--1--6--3 { @include gridpositioning(1, 6, 3);}
+    &--1--6--4 { @include gridpositioning(1, 6, 4);}
+    &--1--6--5 { @include gridpositioning(1, 6, 5);}
+    &--1--6--6 { @include gridpositioning(1, 6, 6);}
+    &--1--6--7 { @include gridpositioning(1, 6, 7);}
+    &--1--6--8 { @include gridpositioning(1, 6, 8);}
+
+    &--1--7--6 { @include gridpositioning(1, 7, 6);}
+    &--3--2--10 { @include gridpositioning(3, 2, 10);}
+
+
+
+
+    &--2 { @include gridpositioning(2, 2, 6);}
 }
