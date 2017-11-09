@@ -1,5 +1,5 @@
 /*
-Theme Name: Bolierplate | Zoink by Zaptronic
+Theme Name: Fotobook | Zoink by Zaptronic
 Theme URI:
 Author: Zoink by Zaptronic
 Author URI: http://zoinkbyzaptronic.nl
@@ -9,8 +9,10 @@ Tags: boilerplate, simple, basic
 */
 
 .nextprev {
-    padding: 20px;
-    background-color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 14px;
+    // background-color: white;
 }
 .nextprev a {
     padding-right: 20px;
@@ -33,4 +35,10 @@ body {
 p {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: transparentize(black, 0.4);
+    font-family: arial;
 }

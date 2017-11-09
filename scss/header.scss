@@ -4,13 +4,13 @@
     top: 0;
 
     &__title {
-        margin-left: $margin;
+        margin-left: $margin/2;
     }
 }
 .main_navigation {
     position: absolute;
-    right: $margin;
-    top: 12px;
+    right: $margin/2;
+    top: 6px;
 
     li {
         display: inline;
